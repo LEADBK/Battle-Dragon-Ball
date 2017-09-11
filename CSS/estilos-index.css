@@ -1,0 +1,115 @@
+main{
+	position: relative;
+	top: 60px;
+}
+
+
+.content-one{
+	width: 100%;
+}
+
+.content-portada{
+	width: 100%;
+	height: 550px;
+	background-image: image("img/goku.jpg"); <!--url(http://cdn.atomix.vg/wp-content/uploads/2017/07/dragon-ball-super-torneo-del-poder.jpg)-->
+	background-position: center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+    }
+
+@media screen and (max-width: 1500px){
+	.content-portada{
+		background-size: 1400px;
+	}
+}
+
+.content-items1{
+	transition: 0.5s;
+	width: 700px;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	top: 60px;
+	background-color: rgba(0, 0, 0, 0.7); /*0, 0, 0, 0.5 - 55, 28, 99, 0.7*/
+	border-radius: 10px 10px 10px 10px; 
+}
+
+.content-items1 h4{
+	color: white;
+	font-size: 50px;
+	font-weight: 100;
+	padding: 5px;
+}
+
+.content-items1 h3{
+	color: white;
+	font-size: 50px;
+	font-weight: 100;
+}
+
+.content-items1 h2{
+	color: white;
+	font-size: 40px;
+	font-weight: 100;
+}
+
+@media screen and (max-width: 800px){
+	.content-items1{
+		width: 100%;
+	}
+}
+
+.button_{
+	transition: 0.5s;
+	width: 300px; height: 50px;
+	color:#FA4C4C;
+	background-color: #fff; 
+	border: 2px solid #FA4C4C;
+	border-radius: 50px 50px 50px 50px;
+	font-size: arial;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 25px;
+
+}
+
+.button_:hover{
+	transition: 0.5s;
+	color: #fff;
+	background-color: #FA4C4C; 
+}
+
+.mas{
+	background-color:#1c1c1c;/*#333333 - #22213D*/
+	display: block;
+	width: 100%;
+	height: 105px;
+}
+
+/*opacity: 0.5;*/
+
+.prueba{
+	max-height: 40%; max-width: 40%; text-align: center; margin-top: 15px;
+	transition: 0.5s;
+	opacity: 1.0;
+    filter: alpha(opacity=100); 
+    border-radius: 10px 10px 10px 10px; 
+}
+.prueba:hover{
+	max-height: 40%; max-width: 40%; text-align: center; margin-top: 15px;
+	transition: 0.5s;
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+    border-radius: 10px 10px 10px 10px; 
+}
+
+#con{
+	background-color: #fff;
+}
+
+footer{
+	background-color: #ececec;
+	color: #4b4b4b;
+	padding: 10px;
+	font-weight: 600;
+}

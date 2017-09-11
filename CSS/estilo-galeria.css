@@ -1,0 +1,25 @@
+.vid{
+	width: 854;
+	height: 480;
+	border: 1px solid #eaeaea;
+	margin-bottom: 5px;
+	padding: 5px;
+	text-align: center;
+	float: left;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+iframe{
+	width: 400;
+	height: 280;
+}
+
+.galeria{
+	text-align: center;
+
+}
+
+.descc{
+	color: #676767;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dragon Ball Super | Calculadora de ki</title>
+	<link rel="stylesheet" href="Iconos\css\fontello.css">
+    <link rel="stylesheet" href="CSS\Menu.css">
+    <link rel="stylesheet" href="CSS\estilos-index.css">
+    <link rel="stylesheet" href="CSS\estilo_calculadora.css">
+    <link rel="stylesheet" type="text/css" href="CSS/calculadora.css">
+   <!-- <script>
+    function calcula(operacion){
+    var operando1 = document.calc.operando1.value
+    var operando2 = document.calc.operando2.value 
+    var result = eval(operando1 + operacion + operando2)
+    document.calc.resultado.value = result
+    }
+</script> -->
+    <script>
+    function calcula(operacion){
+    var edad = document.cal.edad.value
+    var peso = document.cal.peso.value 
+    var altura = document.cal.altura.value
+    var comes = document.cal.comes.value
+    var result = eval((edad + operacion + peso) - altura * comes)
+    document.cal.resultado.value = result
+    }
+</script> 
+</head>
+<body>
+	<header>
+     <img src="https://vignette2.wikia.nocookie.net/dragonball/images/a/ac/Logo_de_Dragon_Ball_Super.png/revision/latest?cb=20160428001444&path-prefix=es" class="img-logo" style="max-height: 65px; max-width: 50px">
+
+      <input type="checkbox" id="check">
+      <label for="check" class="icon-menu"></label>
+
+      <nav class="menu">
+        <ul>
+          <li> <a href="Index.html">INICIO</a></li>
+          <li> <a href="Batallas.html">BATALLAS</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+          <li> <a href="Calculadora_ki.html">CALCULADORA KI</a></li>
+        </ul>
+      </nav>
+      <div></div>
+    </header>
+
+   
+    	<!--<center>
+    	<div class="an">
+    	<form name="calc">
+    	<br>
+    		<h5>Ingrese aqui su edad:</h5>
+    		<input class="texto" type="Text" name="operando1" value="0" size="15">
+    		<br><br>
+    		<h5>Ingrese aqui su peso:</h5>
+            <input class="texto" type="Text" name="operando2" value="0" size="15">
+            <br><br>
+            <input calss="botoncito" type="Button" name="" value=" + " onclick="calcula('+')">
+    	    <br><br>
+            <input class="texto" type="Text" name="resultado" value="0" size="15">
+            <br>
+            </form>
+            </div>
+    	    </center>
+          </div> -->
+    
+   <div class="calculadora">
+        <form name="cal"> 
+            <label for="ed">Edad:</label><br>
+            <input type="text" name="edad" placeholder="Ingrese su edad...">
+            <br><br>
+            <label for="pe">Peso:</label><br>
+            <input type="text" name="peso" placeholder="Ingrese su peso...">
+            <br><br>
+            <label for="pe">Altura:</label><br>
+            <input type="text" name="altura" placeholder="Ingrese su altura...">
+            <br><br>
+            <label for="pe">¿Cuantas veces comes al dia?</label><br>
+            <input type="text" name="comes" placeholder="Ingrese la cantidad...">
+            <br><br>
+            <input type="button" value="KI" onclick="calcula('+')"><br><br>
+            <input type="text" name="resultado" placeholder="Resultado...">
+        </form>
+    </div>
+</body>
+</html>
